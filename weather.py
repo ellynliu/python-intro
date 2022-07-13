@@ -8,7 +8,7 @@ def high_temp(temps):
             high_temp = t
     return high_temp
 
-print(high_temp(may_june))
+print("The highest temperature is: ", high_temp(may_june))
 
 # Find the lowest (or minimum) temperature in the list
 def low_temp(temps):
@@ -18,7 +18,7 @@ def low_temp(temps):
             low_temp = t
     return low_temp
 
-print(low_temp(may_june))
+print("The lowest temperature is: ", low_temp(may_june))
 
 # Find the average temperature of the values in the list
 def avg_temp(temps):
@@ -27,7 +27,7 @@ def avg_temp(temps):
         total = total + t
     return total/len(temps)
 
-print(avg_temp(may_june))
+print("The average temperature is: ", avg_temp(may_june))
 
 # Challenge: Find the greatest temperature difference between two consecutive days
 def greatest_diff(temps):
@@ -42,5 +42,5 @@ def greatest_diff(temps):
             idx2 = i+1
     return curr_max, idx1, idx2
 
-print(greatest_diff(may_june))
-print(may_june[18], may_june[19])
+print("The greatest temperature difference between two consecutive days is:", greatest_diff(may_june)[0], ". The indices are", greatest_diff(may_june)[1], "and", greatest_diff(may_june)[2])
+print("The temperature on indices 18 and 19:", may_june[18], may_june[19])
