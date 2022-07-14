@@ -17,13 +17,13 @@ def calc_distance(station1, station2, line):
 
 # Print out all the train stops in between two stations
 def enumerate(station_1, station_2, train_line):
-  idx_1 = find_position(station_1, train_line)
-  idx_2 = find_position(station_2, train_line)
-  step = 1
-  if idx_1 > idx_2:
-    step = -1
-  for i in range(idx_1, idx_2+step, step):
-    print(train_line[i])
+    idx_1 = find_position(station_1, train_line)
+    idx_2 = find_position(station_2, train_line)
+    step = 1
+    if idx_1 > idx_2:
+        step = -1
+    for i in range(idx_1, idx_2+step, step):
+        print(train_line[i])
 
 # Take in user input for two stations and print out the distance
 # If the user provides a station name that does not exist, restart the function
