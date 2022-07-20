@@ -2,6 +2,7 @@
 # a gradient is produced on a webpage
 
 # Make a black-to-red gradient by stacking <hr>s directly on top of one another
+# Afterwards, play around with the RGB values to create different colors of gradients.
 
 print("<!DOCTYPE html>")
 print("<html>")
