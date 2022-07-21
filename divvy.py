@@ -14,6 +14,22 @@ def analyze():
             #your code here
 '''
 
+'''
+Column 0: ride_id
+Column 1: rideable_type
+Column 2: started_at
+Column 3: ended_at
+Column 4: start_station_name
+Column 5: start_station_id
+Column 6: end_station_name
+Column 7: end_station_id
+Column 8: start_lat
+Column 9: start_lng
+Column 10: end_lat
+Column 11: end_lng
+Column 12: member_casual
+'''
+
 # Count the number of classic and electric bike rides in the dataset.
 def analyze():
     f = open("202206-divvy-tripdata/202206-divvy-tripdata.csv")
