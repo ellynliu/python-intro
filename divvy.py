@@ -29,8 +29,8 @@ def analyze():
             electric_bike_total += 1
     return (classic_bike_total, electric_bike_total)
   
-  # Count the number of round trips, AKA when a bike started and ended at the same station.
-  def round_trips():
+# Count the number of round trips, AKA when a bike started and ended at the same station.
+def round_trips():
     f = open("202206-divvy-tripdata/202206-divvy-tripdata.csv")
     count = 0
     for line in f.readlines():
@@ -41,8 +41,8 @@ def analyze():
             count += 1
     return count
   
-  # Get all of the unique divvy stations.
-  def unique_stations():
+# Get all of the unique divvy stations.
+def unique_stations():
     f = open("202206-divvy-tripdata/202206-divvy-tripdata.csv")
     stations = set()
 
@@ -57,5 +57,5 @@ def analyze():
     print(len(stations))
     sorted_stations = sorted(list(stations))
     return sorted_stations
-  
+
   
