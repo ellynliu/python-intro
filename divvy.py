@@ -1,3 +1,5 @@
+# Download data from https://divvy-tripdata.s3.amazonaws.com/202206-divvy-tripdata.zip
+
 # If you are working with a CSV file with commas as
 # part of the fields, then a regular string split 
 # with a comma delimiter wil not be sufficient. 
