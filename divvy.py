@@ -74,4 +74,23 @@ def unique_stations():
     sorted_stations = sorted(list(stations))
     return sorted_stations
 
+def rides_dict():
+  f = open('202206-divvy-tripdata.csv')
+  f.readline()
+
+  start_dict = {}
+
+  for line in f.readlines():
+    fields = line.split(',')
+    start_station = fields[4]
+
+    if start_station not in start_dict:
+      start_dict[start_station] = 1
+    else:
+      start_dict[start_station] += 1
+
+  start_dict.pop('')
   
+  sorted_start_dict = sorted(start_dict.items(), key=lambda x: x[1], reverse=True)
+ 
+  return sorted_start_dict[:10]
