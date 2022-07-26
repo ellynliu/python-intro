@@ -52,3 +52,28 @@ card3 = Card(13, "Spades")
 print(card1.desc())
 print(card2.desc())
 print(card3.desc())
+
+class Deck:
+    def __init__(self):
+        self.cards = []
+        self.build_deck()
+
+    def build_deck(self):
+        self.cards = []
+        for suit in ["Clubs", "Diamonds", "Hearts", "Spades"]:
+            for val in range(1, 14):
+                self.cards.append(Card(val, suit))
+
+    def shuffle(self):
+        random.shuffle(self.cards)
+
+    def print_deck(self):
+        for c in self.cards:
+            c.print()
+
+    #def deal(self, num_players, hand_size):
+        # your code here
+
+deck1 = Deck()
+deck1.shuffle()
+deck1.print_deck()
