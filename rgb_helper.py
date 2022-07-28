@@ -205,14 +205,14 @@ def run():
   appFont = pygame.font.SysFont('ubuntu', 18)
 
   # Create a rectangle that displays the text of the red value
-  redText = appFont.render(str(current_color.r)+' red', True, (0, 0, 0), (255, 255, 255))
+  redText = appFont.render(f"{current_color.r} red", True, (0, 0, 0), (255, 255, 255))
   redRect = pygame.Rect(30, 20, 100, 30)
   
   # Similarly, create a rectangle for the green and blue values
-  greenText = appFont.render(str(current_color.g)+' green', True, (0, 0, 0), (255, 255, 255))
+  greenText = appFont.render(f"{current_color.g} green", True, (0, 0, 0), (255, 255, 255))
   greenRect = pygame.Rect(30, 70, 100, 30)
 
-  blueText = appFont.render(str(current_color.b)+' blue', True, (0, 0, 0), (255, 255, 255))
+  blueText = appFont.render(f"{current_color.b} blue", True, (0, 0, 0), (255, 255, 255))
   blueRect = pygame.Rect(30, 120, 100, 30)
 
   cssText = appFont.render(current_color.css_string(), True, (0, 0, 0), (255, 255, 255))
@@ -295,4 +295,3 @@ def run():
 
 while True:
   run()
-  
